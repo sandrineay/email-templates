@@ -29,16 +29,20 @@ $white: #fefefe;
 $pre-color: #ff6908;
 $global-width: 607px;
 $global-width-small: 95%;
+$global-gutter: 0;
 $body-background: $light-gray;
 $container-background: $light-gray;
-$global-rounded: 500px;
-$global-gutter: 0;
+$global-padding: 0;
+$global-margin: 0;
+$global-radius: 0;
+$global-rounded: 0;
 $global-breakpoint: $global-width + $global-gutter;
 
 // 2. Grid
 // -------
 
 $grid-column-count: 12;
+$column-padding-bottom: $global-padding;
 $container-radius: 0;
 
 // 3. Block Grid
@@ -79,13 +83,13 @@ $anchor-color-hover: darken($primary-color, 10%);
 $anchor-color-active: $anchor-color-hover;
 $stat-font-size: 40px;
 
-
 // 6. Callout
 // ----------
 
 $callout-background: $white;
 $callout-background-fade: 85%;
 $callout-padding: 10px;
+$callout-margin-bottom: $global-margin;
 $callout-border: 1px solid darken($callout-background, 20%);
 $callout-border-secondary: 1px solid darken($secondary-color, 20%);
 $callout-border-success: 1px solid darken($success-color, 20%);
@@ -103,7 +107,9 @@ $menu-item-color: $primary-color;
 // ------------
 
 $thumbnail-border: solid 4px $white;
+$thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
+$thumbnail-radius: $global-radius;
 

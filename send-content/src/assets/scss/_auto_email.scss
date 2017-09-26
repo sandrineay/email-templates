@@ -7,29 +7,21 @@ p.intro {
 //Header
 
 .header-email {
-  background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/header-background.png);
-  height: 500px;
+  background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/background-header-content.png);
+  height: 475px;
   @media only screen and (max-width: #{$global-breakpoint}) {
     background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/header-background-mobile258.png) !important;
-    height: 562px;
-    margin-bottom: 20px;
+    height: 542px;
+    margin-bottom: 15px;
   }
   background-repeat: no-repeat;
   padding: 50px 20px 20px 20px;
   h1 {
     font-weight: bolder;
     font-size: 31px;
-    margin: 0 15px;
+    margin: 0 15px 30px 15px;
     @media only screen and (max-width: #{$global-breakpoint}) {
       font-size: 20px !important;
-    }
-  }
-  h2 {
-    font-weight: bolder;
-    font-size: 17px;
-    margin: 15px 15px 0 15px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      font-size: 15px !important;
     }
   }
   p {
@@ -212,5 +204,3 @@ a.call-to-action {
     margin-left: 10px;
   }
 }
-
-
