@@ -175,10 +175,10 @@ a.call-to-action {
       text-align: center !important;
     }
   }
-  img {
-    margin: 0 15px;
+  img.avatar {
+    margin: 0 15px 20px 15px;
     @media only screen and (max-width: #{$global-breakpoint}) {
-      margin: auto !important;
+      margin: 20px auto !important;
     }
   }
 }
