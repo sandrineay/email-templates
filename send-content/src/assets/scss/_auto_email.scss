@@ -10,8 +10,8 @@ p.intro {
   background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/background-header-content.png);
   height: 475px;
   @media only screen and (max-width: #{$global-breakpoint}) {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/header-background-mobile258.png) !important;
-    height: 542px;
+    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/background-header-content-mobile.png) !important;
+    height: 470px;
     margin-bottom: 15px;
   }
   background-repeat: no-repeat;
@@ -44,9 +44,9 @@ p.intro {
   margin-left: 20px;
   margin-right: 20px;
   .event-cover {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/event-cover.png);
+    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/video-cover.png);
     @media only screen and (max-width: #{$global-breakpoint}) {
-      background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/event-cover-mobile.png) !important;
+      background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/video-cover.png) !important;
       padding-top: 170px !important;
     }
     background-repeat: no-repeat;
@@ -54,11 +54,12 @@ p.intro {
   p {
     font-weight: lighter;
     font-size: 14px;
+    margin: 10px 10px 22px 10px;
   }
   h2 {
     font-weight: bolder;
     font-size: 22px;
-    margin-bottom: 20px;
+    margin: 22px 10px 11px 10px;
   }
 }
 
@@ -70,34 +71,9 @@ p.intro {
   }
 }
 
-.date {
-  display: flex;
-  img {
-    height: 15px;
-    width: 15px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      height: 15px !important;
-      width: 15px !important;
-    }
-  }
-  p {
-    margin-left: 10px;
-  }
-}
-
-.location {
-  display: flex;
-  img {
-    height: 15px;
-    width: 12px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      height: 15px !important;
-      width: 12px !important;
-    }
-  }
-  p {
-    margin-left: 10px;
-  }
+.video-button {
+  background-color: #D23333;
+  border-radius: 0 3px 3px 0;
 }
 
 //Event button
