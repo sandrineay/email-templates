@@ -11,7 +11,7 @@ p.intro {
   height: 475px;
   @media only screen and (max-width: #{$global-breakpoint}) {
     background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/background-header-content-mobile.png) !important;
-    height: 470px;
+    height: 415px;
     margin-bottom: 15px;
   }
   background-repeat: no-repeat;
@@ -36,30 +36,37 @@ p.intro {
   }
 }
 
-//Event Card
+// Cards
 
 .event-details {
   background-color: white;
   border-radius: 3px;
-  margin-left: 20px;
-  margin-right: 20px;
-  .event-cover {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/video-cover.png);
+  margin: 0 20px 20px 20px;
+  .event-cover-1 {
+    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/video-cover836.png);
     @media only screen and (max-width: #{$global-breakpoint}) {
-      background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/video-cover.png) !important;
-      padding-top: 170px !important;
+      background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/video-cover904.png) !important;
+      padding-top: 130px !important;
+    }
+    background-repeat: no-repeat;
+  }
+  .event-cover-2 {
+    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/read-cover920.png);
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/read-cover-mobile924.png) !important;
+      padding-top: 130px !important;
     }
     background-repeat: no-repeat;
   }
   p {
     font-weight: lighter;
     font-size: 14px;
-    margin: 10px 10px 22px 10px;
+    margin: 15px 10px 22px 20px;
   }
   h2 {
     font-weight: bolder;
     font-size: 22px;
-    margin: 22px 10px 11px 10px;
+    margin: 22px 10px 11px 20px;
   }
 }
 
@@ -71,9 +78,22 @@ p.intro {
   }
 }
 
-.video-button {
-  background-color: #D23333;
-  border-radius: 0 3px 3px 0;
+.emoji-inline {
+  margin-right: 10px;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
 }
 
 //Event button
