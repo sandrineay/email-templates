@@ -4,6 +4,10 @@ p.intro {
   opacity: 0.7;
 }
 
+a.a-tag {
+  color: #D23333;
+}
+
 //Header
 
 .header-email {
@@ -177,6 +181,8 @@ a.call-to-action {
   }
   img.avatar {
     margin: 0 15px 20px 15px;
+    border-radius: 50%;
+    width: 91px;
     @media only screen and (max-width: #{$global-breakpoint}) {
       margin: 20px auto !important;
     }
