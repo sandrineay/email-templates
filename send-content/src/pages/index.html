@@ -4,19 +4,21 @@ subject: My Email Templates
 ---
 
 <container>
-
-  <p class="intro">
-    Thanks again for signing up to Le Wagon Free Track!
-  </p>
+  <div class="disclaimer">
+    <p class="intro">
+      Thanks again for signing up to Le Wagon Free Track!
+    </p>
+  </div>
 
   <div class="header-email">
     <row>
       <columns large="10" small="8">
-        <h1>You're just at the </ br> beginning  of your </ br> journey</h1>
+        <h1>You're just at the beginning of your journey</h1>
       </columns>
-
       <columns large="2" small="4">
-        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/logo.png" alt="">
+        <div class="logo-wrapper">
+          <img class="logo" src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/logo-lewagon.png" alt="">
+        </div>
       </columns>
     </row>
 
@@ -41,13 +43,24 @@ subject: My Email Templates
     </row>
   </div>
 
+  <row>
+    <columns>
+      <img class="slice-bottom" src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/slice-bottom.png" alt="">
+    </columns>
+  </row>
+
+
+
   <div class="event-details">
     <row>
-      <columns large="4" small="12" class="event-cover-1">
+      <columns large="4" small="12" class="card-content-1">
       </columns>
-      <columns large="8" small="12" class="event-info">
+      <columns large="8" small="12">
         <h2>Watch our videos and get new skills</h2>
-        <p><span class="emoji-inline">💪</span>Learn from the best developers and entrepreneurs.</p>
+        <div class="card-info">
+          <span class="emoji">💪</span>
+          <p>Learn from the best developers and entrepreneurs.</p>
+        </div>
         <div class="call-to-action">
           Watch
         </div>
@@ -58,11 +71,14 @@ subject: My Email Templates
 
   <div class="event-details">
     <row>
-      <columns large="4" small="12" class="event-cover-2">
+      <columns large="4" small="12" class="card-content-2 ">
       </columns>
       <columns large="8" small="12" class="event-info">
-        <h2>Empower yourself reading by </ br> using our resources</h2>
-        <p><span class="emoji-inline">✨</span>Read our alumni stories, learn with our tutorials.</p>
+        <h2>Empower yourself reading by using our resources</h2>
+        <div class="card-info">
+          <span class="emoji">✨</span>
+          <p>Read our alumni stories, learn with our tutorials.</p>
+        </div>
         <div class="call-to-action">
           Read
         </div>
@@ -71,9 +87,15 @@ subject: My Email Templates
     </row>
   </div>
 
-  <div class="host-details">
+  <row>
+    <columns>
+      <img class="slice-top" src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/slice-top.png" alt="">
+    </columns>
+  </row>
+
+  <div class="host-section">
     <row>
-      <columns large="4" small="12">
+      <columns class="host-picture-frame" large="4" small="12">
         <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/avatar.png" alt="">
       </columns>
       <columns large="8" small="12">
@@ -90,15 +112,24 @@ subject: My Email Templates
     </row>
   </div>
 
-  <row>
-    <div class="footer">
-      <p>www.lewagon.com</p>
-      <div class="social-media">
-        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/facebook.png" alt="">
-        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/twitter.png" alt="">
-        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/instagram.png" alt="">
-      </div>
-    </div>
+  <div class="footer">
+    <row>
+      <columns large="9" small="8">
+        <a href="#">www.lewagon.com</a>
+      </columns>
+      <columns large="3" small="4">
+        <div class="social-media">
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/facebook.png" alt="">
+          </a>
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/twitter.png" alt="">
+          </a>
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/instagram.png" alt="">
+          </a>
+        </div>
+      </columns>
+    <row>
   </row>
-
 </container>

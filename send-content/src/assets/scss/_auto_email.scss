@@ -1,85 +1,128 @@
-p.intro {
-  font-size: 12px;
+/* DISCLAIMER *****************************************************************/
+
+.disclaimer {
+  padding: 10px;
   margin-top: 10px;
-  opacity: 0.7;
+
+  .intro {
+    font-size: 12px;
+    margin: 0 !important;
+    opacity: 0.7;
+  }
 }
 
-//Header
+/* HEADER *********************************************************************/
 
 .header-email {
-  background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/background-header-content.png);
-  height: 475px;
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/background-header-content-mobile.png) !important;
-    height: 415px;
-    margin-bottom: 15px;
-  }
+  padding: 50px 50px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
   background-repeat: no-repeat;
-  padding: 50px 20px 20px 20px;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding: 20px !important;
+    margin-bottom: 15px !important;
+    max-width: 350px !important;
+  }
+
   h1 {
-    font-weight: bolder;
+    margin-bottom: 46px;
+    max-width: 420px;
     font-size: 31px;
-    margin: 0 15px 30px 15px;
+    font-weight: bolder;
+
     @media only screen and (max-width: #{$global-breakpoint}) {
-      font-size: 20px !important;
+      margin: 20px 20px 20px 0 !important;
+      font-size: 22px !important;
     }
   }
+
+  .logo {
+    padding: 0 0 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 20px !important;
+    }
+
+  }
+
   p {
     font-weight: lighter;
     font-size: 16px;
-    margin: 15px 15px 0 15px;
     opacity: 0.8;
     line-height: 25px !important;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      font-size: 13px !important;
-    }
   }
 }
 
-// Cards
+.slice-bottom {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    width: 350px !important;
+    margin: -16px auto 0;
+  }
+}
+
+.slice-top {
+  margin: 30px 0 0 0;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    width: 356px !important;
+    margin: 30px auto -16px;
+  }
+}
+
+/* CARDS **********************************************************************/
 
 .event-details {
   background-color: white;
   border-radius: 3px;
-  margin: 0 20px 20px 20px;
-  .event-cover-1 {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/video-cover836.png);
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/video-cover904.png) !important;
-      padding-top: 130px !important;
-    }
+  margin: 20px 20px 0;
+
+  .card-content-1 {
+    background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/content-videos.png');
+  }
+
+  .card-content-2 {
+    background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/content-ressources.png');
+  }
+
+  .card-content-1,
+  .card-content-2 {
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 176px !important;
+    border-radius: 3px 3px 0 0;
   }
-  .event-cover-2 {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/read-cover920.png);
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/read-cover-mobile924.png) !important;
-      padding-top: 130px !important;
-    }
-    background-repeat: no-repeat;
-  }
-  p {
-    font-weight: lighter;
-    font-size: 14px;
-    margin: 15px 10px 22px 20px;
-  }
+
   h2 {
     font-weight: bolder;
-    font-size: 22px;
-    margin: 22px 10px 11px 20px;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px 20px 10px;
   }
-}
 
-.event-info {
-  margin-left: 20px;
-  margin-top: 30px;
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    margin-top: 10px !important;
+  .card-info {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 16px;
+
+    .emoji {
+      font-size: 26px;
+    }
+
+    p {
+      padding: 0 0 0 15px;
+      margin: 0 !important;
+      font-size: 16px;
+      line-height: 25px !important;
+      font-weight: lighter;
+    }
   }
-}
-
-.emoji-inline {
-  margin-right: 10px;
 }
 
 
@@ -94,10 +137,9 @@ p.intro {
   padding: 12px 40px;
   text-align: center;
   border-radius: 0px 0px 3px 0px;
+
   @media only screen and (max-width: #{$global-breakpoint}) {
-    border-radius: 0px 0px 3px 3px;
-    margin-left: -20px;
-    margin-right: 20px;
+    border-radius: 0px 0px 3px 3px !important;;
   }
 }
 
@@ -127,36 +169,34 @@ a.call-to-action {
 
 //Host Card
 
-.host-details {
-  background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/host-background.png);
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/footer-background-mobile.png) !important;
+.host-section {
+  padding: 25px 50px 50px 50px;
+  background-color: #ffffff;
+
+  img {
+    margin: 0 auto;
   }
-  background-repeat: no-repeat;
-  padding: 90px 20px 20px 20px;
-  height: 135px;
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    height: 260px !important;
-  }
-  margin-top: 25px;
+
   h2 {
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 14px !important;
+
     @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 22px !important;
+      padding: 16px 10px 0 10px !important;
       text-align: center !important;
     }
   }
+
   p {
+    margin-bottom: 16px !important;
+    font-size: 16px;
+    line-height: 25px !important;
     font-weight: lighter;
-    font-size: 14px;
+
     @media only screen and (max-width: #{$global-breakpoint}) {
       text-align: center !important;
-    }
-  }
-  img {
-    margin: 0 15px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      margin: auto !important;
     }
   }
 }
@@ -171,6 +211,7 @@ a.call-to-action {
   p {
     font-weight: bolder;
     font-size: 16px;
+    line-height: 25px !important;
   }
   a {
     font-weight: bolder;
@@ -182,24 +223,27 @@ a.call-to-action {
   }
 }
 
-//Footer
+/* FOOTER *********************************************************************/
 
 .footer {
-  background-color: #4A4A4A;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  p {
+  margin-bottom: 60px !important;
+  background-color: #4a4a4a;
+
+  a {
     color: white;
+    text-decoration: none;
   }
-  margin-left: 8px;
 }
 
 .social-media {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 17px;
+
   img {
     margin-left: 10px;
   }
