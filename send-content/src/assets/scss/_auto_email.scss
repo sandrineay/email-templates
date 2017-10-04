@@ -4,6 +4,11 @@
   padding: 10px;
   margin-top: 10px;
 
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin: 0 auto !important;
+    max-width: 350px !important;
+  }
+
   .intro {
     font-size: 12px;
     margin: 0 !important;
@@ -70,8 +75,8 @@
   margin: 30px 0 0 0;
 
   @media only screen and (max-width: #{$global-breakpoint}) {
-    width: 356px !important;
-    margin: 30px auto -16px;
+    width: 350px !important;
+    margin: 30px auto 0 !important;
   }
 }
 
@@ -81,6 +86,12 @@
   background-color: white;
   border-radius: 3px;
   margin: 20px 20px 0;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin: 20px auto 0 !important;
+    max-width: 350px !important;
+  }
 
   .card-content-1 {
     background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/content-videos.png');
@@ -167,11 +178,17 @@ a.call-to-action {
   opacity: 0.1;
 }
 
-//Host Card
+/* HOST SECTION ***************************************************************/
 
 .host-section {
-  padding: 25px 50px 50px 50px;
+  padding: 25px 40px 50px 40px;
+  margin: 0 auto;
   background-color: #ffffff;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    max-width: 350px !important;
+  }
 
   img {
     margin: 0 auto;
@@ -201,22 +218,25 @@ a.call-to-action {
   }
 }
 
-.link {
+.link-to-meetup {
   img {
     width: 9px;
     height: 9px;
     margin-left: 5px;
     display: inline;
   }
+
   p {
     font-weight: bolder;
     font-size: 16px;
     line-height: 25px !important;
   }
+
   a {
     font-weight: bolder;
     font-size: 16px;
     color: black;
+
     &:hover {
       color:black;
     }
@@ -230,8 +250,13 @@ a.call-to-action {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin-bottom: 60px !important;
+  margin: 0 auto 60px !important;
   background-color: #4a4a4a;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    max-width: 350px !important;
+  }
 
   a {
     color: white;
