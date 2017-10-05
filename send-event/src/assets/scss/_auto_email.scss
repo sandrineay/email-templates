@@ -1,116 +1,157 @@
-p.intro {
-  font-size: 12px;
+/* DISCLAIMER *****************************************************************/
+
+.disclaimer {
+  padding: 10px;
   margin-top: 10px;
-  opacity: 0.7;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin: 0 auto !important;
+    max-width: 350px !important;
+  }
+
+  .intro {
+    font-size: 12px;
+    margin: 0 !important;
+    opacity: 0.7;
+  }
 }
 
-a.a-tag {
-  color: #D23333;
-}
-
-//Header
+/* HEADER *********************************************************************/
 
 .header-email {
-  background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/header-background.png);
-  height: 500px;
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/header-background-mobile258.png) !important;
-    height: 562px;
-    margin-bottom: 20px;
-  }
+  padding: 50px 50px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
   background-repeat: no-repeat;
-  padding: 50px 20px 20px 20px;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding: 20px !important;
+    margin-bottom: 15px !important;
+    max-width: 350px !important;
+  }
+
   h1 {
-    font-weight: bolder;
+    margin-bottom: 0;
+    max-width: 390px;
     font-size: 31px;
-    margin: 0 15px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      font-size: 20px !important;
-    }
-  }
-  h2 {
     font-weight: bolder;
-    font-size: 17px;
-    margin: 15px 15px 0 15px;
+
     @media only screen and (max-width: #{$global-breakpoint}) {
-      font-size: 15px !important;
+      margin: 20px 20px 5px 0 !important;
+      font-size: 22px !important;
     }
   }
+
+  span {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 35px;
+
+     @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 16px !important;
+      line-height: 26px !important;
+     }
+  }
+
+  .logo {
+    padding: 0 0 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 20px !important;
+    }
+
+  }
+
   p {
     font-weight: lighter;
     font-size: 16px;
-    margin: 15px 15px 0 15px;
     opacity: 0.8;
     line-height: 25px !important;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      font-size: 13px !important;
-    }
   }
 }
 
-//Event Card
+.slice-bottom {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    width: 350px !important;
+    margin: -16px auto 0;
+  }
+}
+
+.slice-top {
+  margin: 30px 0 0 0;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    width: 350px !important;
+    margin: 30px auto 0 !important;
+  }
+}
+
+/* CARDS **********************************************************************/
 
 .event-details {
   background-color: white;
   border-radius: 3px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px 20px 0;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin: 20px auto 20px !important;
+    max-width: 350px !important;
+  }
+
   .event-cover {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/event-cover.png);
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/event-cover-mobile.png) !important;
-      padding-top: 170px !important;
-    }
+    background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/event-invite.jpg');
+  }
+
+  .event-cover {
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 176px !important;
+    border-radius: 3px 0 0 3px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      border-radius: 3px 3px 0 0 !important;
+    }
   }
-  p {
-    font-weight: lighter;
-    font-size: 14px;
-  }
+
   h2 {
     font-weight: bolder;
-    font-size: 22px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px 20px 10px;
   }
-}
 
-.event-info {
-  margin-left: 20px;
-  margin-top: 30px;
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    margin-top: 10px !important;
-  }
-}
+  .card-info {
+    display: flex;
+    padding: 0 20px 16px;
 
-.date {
-  display: flex;
-  img {
-    height: 15px;
-    width: 15px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      height: 15px !important;
-      width: 15px !important;
+    .emoji {
+      font-size: 26px;
+
+      img {
+        height: 24px;
+      }
+    }
+
+    p {
+      padding: 0 0 0 15px;
+      margin: 0 !important;
+      font-size: 16px;
+      line-height: 25px !important;
+      font-weight: lighter;
     }
   }
-  p {
-    margin-left: 10px;
-  }
 }
 
-.location {
-  display: flex;
-  img {
-    height: 15px;
-    width: 12px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      height: 15px !important;
-      width: 12px !important;
-    }
-  }
-  p {
-    margin-left: 10px;
-  }
-}
+
 
 //Event button
 
@@ -122,8 +163,9 @@ a.a-tag {
   padding: 12px 40px;
   text-align: center;
   border-radius: 0px 0px 3px 0px;
+
   @media only screen and (max-width: #{$global-breakpoint}) {
-    border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px !important;;
   }
 }
 
@@ -151,86 +193,98 @@ a.call-to-action {
   opacity: 0.1;
 }
 
-//Host Card
+/* HOST SECTION ***************************************************************/
 
-.host-details {
-  background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/host-background.png);
+.host-section {
+  padding: 25px 40px 50px 40px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
   @media only screen and (max-width: #{$global-breakpoint}) {
-    background-image: url(https://raw.githubusercontent.com/sandrineay/img-automated-email/master/footer-background-mobile.png) !important;
+    max-width: 350px !important;
   }
-  background-repeat: no-repeat;
-  padding: 90px 20px 20px 20px;
-  height: 135px;
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    height: 260px !important;
+
+  img {
+    margin: 0 auto;
   }
-  margin-top: 25px;
+
   h2 {
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 14px !important;
+
     @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 22px !important;
+      padding: 16px 10px 0 10px !important;
       text-align: center !important;
     }
   }
+
   p {
+    margin-bottom: 16px !important;
+    font-size: 16px;
+    line-height: 25px !important;
     font-weight: lighter;
-    font-size: 14px;
+
     @media only screen and (max-width: #{$global-breakpoint}) {
       text-align: center !important;
-    }
-  }
-  img.avatar {
-    margin: 0 15px 20px 15px;
-    border-radius: 50%;
-    width: 91px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      margin: 20px auto !important;
     }
   }
 }
 
-.link {
+.link-to-meetup {
   img {
     width: 9px;
     height: 9px;
     margin-left: 5px;
     display: inline;
   }
+
   p {
     font-weight: bolder;
     font-size: 16px;
+    line-height: 25px !important;
   }
+
   a {
     font-weight: bolder;
     font-size: 16px;
     color: black;
+
     &:hover {
       color:black;
     }
   }
 }
 
-//Footer
+/* FOOTER *********************************************************************/
 
 .footer {
-  background-color: #4A4A4A;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  p {
-    color: white;
+  margin: 0 auto 60px !important;
+  background-color: #4a4a4a;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    max-width: 350px !important;
   }
-  margin-left: 8px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .social-media {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 17px;
+
   img {
     margin-left: 10px;
   }
 }
-
-

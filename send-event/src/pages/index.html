@@ -5,19 +5,22 @@ subject: My Email Templates
 
 <container>
 
-  <p class="intro">
-    Thanks again for signing up to Le Wagon Free Track!
-  </p>
+ <div class="disclaimer">
+    <p class="intro">
+      Thanks again for signing up to Le Wagon Free Track!
+    </p>
+  </div>
 
   <div class="header-email">
     <row>
       <columns large="10" small="8">
-        <h1>Come to our free event </ br> "API for beginners"</h1>
-        <h2>on October 26th at Campus London</h2>
+        <h1>Come to our free event "API for beginners"</h1>
+        <span>on October 26th at Campus London</<span>
       </columns>
-
       <columns large="2" small="4">
-        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/logo.png" alt="">
+        <div class="logo-wrapper">
+          <img class="logo" src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/logo-lewagon.png" alt="">
+        </div>
       </columns>
     </row>
 
@@ -42,20 +45,27 @@ subject: My Email Templates
     </row>
   </div>
 
+  <row>
+    <columns>
+      <img class="slice-bottom" src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/slice-bottom.png" alt="">
+    </columns>
+  </row>
+
+
   <div class="event-details">
     <row>
       <columns large="4" small="12" class="event-cover">
       </columns>
       <columns large="8" small="12">
         <div class="event-info">
-          <h2>Workshop - Git & Github for </ br>beginners</h2>
-          <div class="date">
-            <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/calendar-icon.png" alt="">
+          <h2>Workshop - Git & Github for beginners</h2>
+          <div class="card-info">
+            <span class="emoji"><img src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/calendar-icon.jpg" alt=""></span>
             <p>Wednesday, July 26, 2017</ br>7:00 PM to 10:00PM</p>
           </div>
-          <div class="location">
-            <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/location-icon.png" alt="">
-            <p>Le Wagon</ br>16 Villa Gaudelet, 75011 Paris</p>
+          <div class="card-info">
+            <span class="emoji"><img src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/marker-icon.jpg" alt=""></span>
+             <p>Le Wagon</ br>16 Villa Gaudelet, 75011 Paris</p>
           </div>
         </div>
         <div class="call-to-action">
@@ -66,35 +76,49 @@ subject: My Email Templates
     </row>
   </div>
 
-  <div class="host-details">
+  <row>
+    <columns>
+      <img class="slice-top" src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/slice-top.png" alt="">
+    </columns>
+  </row>
+
+  <div class="host-section">
     <row>
-      <columns large="4" small="12">
-        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/avatar.png" alt="" class="avatar">
+      <columns class="host-picture-frame" large="4" small="12">
+        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/avatar.png" alt="">
       </columns>
       <columns large="8" small="12">
         <h2>Ask us anything!</h2>
-
         <p>Feel free to join us anytime for our free events at Le Wagon Paris, the team and I will always be happy to welcome you!</p>
 
-        <div class="link">
+        <div class="link-to-meetup">
           <a href="#">
-            <p>Learn more about our Meetups <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/triangle.png" alt=""></p>
+            <p>Learn more about our Meetups <img src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/triangle.png" alt=""></p>
           </a>
         </div>
       </columns>
     </row>
   </div>
 
-  <row>
-    <div class="footer">
-      <p>www.lewagon.com</p>
-      <div class="social-media">
-        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/facebook.png" alt="">
-        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/twitter.png" alt="">
-        <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/instagram.png" alt="">
-      </div>
-    </div>
+  <div class="footer">
+    <row>
+      <columns large="9" small="8">
+        <a href="#">www.lewagon.com</a>
+      </columns>
+      <columns large="3" small="4">
+        <div class="social-media">
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/facebook.png" alt="">
+          </a>
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/twitter.png" alt="">
+          </a>
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/sandrineay/img-automated-email/master/instagram.png" alt="">
+          </a>
+        </div>
+      </columns>
+    <row>
   </row>
-
 </container>
 
