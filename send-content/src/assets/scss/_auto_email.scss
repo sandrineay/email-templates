@@ -94,11 +94,11 @@
   }
 
   .card-content-1 {
-    background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/content-videos.png');
+    background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/content-video.jpg');
   }
 
   .card-content-2 {
-    background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/content-ressources.png');
+    background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/content-ressource.jpg');
   }
 
   .card-content-1,
@@ -107,7 +107,11 @@
     background-size: cover;
     background-position: center;
     height: 176px !important;
-    border-radius: 3px 3px 0 0;
+    border-radius: 3px 0 0 3px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      border-radius: 3px 3px 0 0 !important;
+    }
   }
 
   h2 {

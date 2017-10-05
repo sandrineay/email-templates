@@ -129,7 +129,7 @@ function inliner(css) {
     .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/app.css">', '')
     .pipe($.htmlmin, {
       collapseWhitespace: false,
-      minifyCSS: false
+      minifyCSS: true
     });
 
   return pipe();
