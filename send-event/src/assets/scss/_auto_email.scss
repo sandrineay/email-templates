@@ -265,7 +265,7 @@ a.call-to-action {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin: 0 auto 60px !important;
+  margin: 0 auto 10px !important;
   background-color: #4a4a4a;
   box-sizing: border-box;
 
@@ -286,5 +286,6 @@ a.call-to-action {
 
   img {
     margin-left: 10px;
+    height: 20px;
   }
 }
